@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--local css-->
+    <link rel="stylesheet" href="css/index.css">
+    <title>hw5</title>
+</head>
+<body>
+<div class="container">
+    <div class="form-control" style="margin-top: 10px">
+    <h1>Calculator App</h1>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="input-x">x</span>
+        </div>
+        <input id="x" type="number" class="form-control col-lg-3" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="input-y">y</span>
+        </div>
+        <input id="y" type="number" class="form-control col-lg-3" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+    </div>
+    <div class="form-control" style="margin-top: 10px">
+    <button class="btn btn-primary mr-2" onclick="getMul()">x</button>
+    <button class="btn btn-primary mr-2" onclick="getDiv()">÷</button>
+    <button class="btn btn-primary mr-2" onclick="getAdd()">+</button>
+    <button class="btn btn-primary mr-2" onclick="getSub()">-</button>
+    <button class="btn btn-primary mr-2" onclick="getPow()">^</button>
+    <input type="checkbox" class="mr-2" id="defaultCheck">
+    <label style="font-weight: bold">make default?</label>
+
+    <select class="custom-select col-lg-1 float-right mb-3" id="hashLag">
+        <option selected value="md5">md5</option>
+        <option value="sha256">sha256</option>
+        <option value="sha1">sha1</option>
+        <option value="sha512">sha512</option>
+    </select>
+    </div>
+    <div class="form-control" style="margin-top: 10px">
+    <p id ="opView" style="word-wrap:break-word" class="form-control mb-3" readonly>result area...</p>
+    <p id="hashView" style="word-wrap:break-word" class="form-control" readonly>hash area...</p>
+    </div>
+</div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
